@@ -16,13 +16,15 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #f4f4f4;
     color: #222;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
     /* Ensure vertical scrolling is allowed */
 }
 
 main {
-    height: 100%;
+    flex: 1;
     width: 100%;
     background: #E4FF6E;
     max-width: 1100px;
@@ -153,10 +155,20 @@ section {
     color: #222;
 }
 
+.services {
+    background: #fffbe6;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    padding: 2rem 1.5rem;
+    margin-bottom: 3rem;
+}
+
 .service-cards {
+    margin-top: 1.5rem;
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -217,8 +229,27 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
+    margin-top: 0;
     font-size: 1rem;
+}
+
+.about-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    margin-right: 2rem;
+    background: #fff;
+    border: 3px solid #ff9800;
+    display: block;
+}
+
+/* For better layout of about section */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 @media (max-width: 800px) {
